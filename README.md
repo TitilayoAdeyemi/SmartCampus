@@ -1,4 +1,5 @@
-# Student Management API
+# Smart Campus
+## A student management system for making school administration easier
 ---
 
 This is a student management API that allows you to manage student data in a database. With this API, you can create, read, update, and delete student data, as well as perform various queries to retrieve specific information about the students.
