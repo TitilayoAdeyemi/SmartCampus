@@ -20,23 +20,19 @@ The following endpoints are available in the API:
 - **HTTP Method:** POST
 - **Endpoint:** `/auth/signup`
 - **Description:** This endpoint allows users to create an account
-
-
+---
 - **HTTP Method:** POST
 - **Endpoint:** `/auth/login`
 - **Description:** This endpoint allows users to login to their account
-
-
+---
 - **HTTP Method:** POST
 - **Endpoint:** `/auth/refresh`
 - **Description:** This endpoint allows users to refresh their access token
-
-
+---
 - **HTTP Method:** GET
 - **Endpoint:** `/students/students`
 - **Description:** This endpoint retrieves all the student data in the database
-
-
+---
 - **HTTP Method:** POST
 - **Endpoint:** `/students/students`
 - **Description:** This endpoint creates a new student in the database. You need to send a JSON object with the following fields:
@@ -49,38 +45,38 @@ The following endpoints are available in the API:
     "courses_registered": ["PSY 101", "MTH 101", "PHY 101"]
 }
 `
-
-
+---
 - **HTTP Method:** GET
 - **Endpoint:** `/students/students/student_id`
 - **Description:** This endpoint retrieves a specific student's data by their ID
-
-
+---
 - **HTTP Method:** GET
 - **Endpoint:** `/students/students/student_id`
 - **Description:** This endpoint retrieves all courses registered by a specific student
-
-
+---
 - **HTTP Method:** PUT
 - **Endpoint:** `/students/students_student_id`
 - **Description:** This endpoint updates student's data using their ID
+---
+
+- **HTTP Method:** DELETE
+- **Endpoint:** `/students/students/students_id`
+- **Description:** This endpoint deletes a specific student's data by their ID
+---
+- **HTTP Method:** GET
+- **Endpoint:** `/courses/courses`
+- **Description:** This endpoint retrieves all the courses offered in the school
+---
+
+- **HTTP Method:** POST
+- **Endpoint:** `/courses/courses`
+- **Description:** This endpoint registers a new course by admin
+---
 
 
-PUT /students/students/student_id
-This endpoint updates student's data using their ID.
-
-DELETE /students/students/student_id
-This endpoint deletes a specific student's data by their ID.
-
-
-
-GET /courses/courses
-This endpoint retrieves all the courses offered in the school.
-
-POST /courses/courses
-This endpoint registers a new course by admin.
-
-
+- **HTTP Method:** GET
+- **Endpoint:** `/students/students`
+- **Description:** This endpoint retrieves all the student data in the database
 GET /courses/course_id
 This endpoint retrieves a specific course by its ID.
 
