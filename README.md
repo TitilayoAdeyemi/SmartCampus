@@ -37,14 +37,14 @@ The following endpoints are available in the API:
 - **Endpoint:** `/students/students`
 - **Description:** This endpoint creates a new student in the database. You need to send a JSON object with the following fields:
 
-`
+```
 {
     "student_name": "John Doe",
     "student_email": "johndoe@example.com",
     "department" : "Psychology"
     "courses_registered": ["PSY 101", "MTH 101", "PHY 101"]
 }
-`
+```
 ---
 - **HTTP Method:** GET
 - **Endpoint:** `/students/students/student_id`
