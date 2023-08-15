@@ -73,34 +73,36 @@ The following endpoints are available in the API:
 - **Description:** This endpoint registers a new course by admin
 ---
 
+- **HTTP Method:** GET
+- **Endpoint:** `/courses/course_id`
+- **Description:** This endpoint retrieves a specific course by its id
+---
 
 - **HTTP Method:** GET
-- **Endpoint:** `/students/students`
-- **Description:** This endpoint retrieves all the student data in the database
-GET /courses/course_id
-This endpoint retrieves a specific course by its ID.
+- **Endpoint:** `/courses/course_id`
+- **Description:** This endpoint updates a specific course by its id. ADMINS ONLY
+
+---
 
 
-PUT /courses/course_id
-This endpoint updates a specific course by its ID. Admins only.
+- **HTTP Method:** DELETE
+- **Endpoint:** `/courses/course_id`
+- **Description:** This endpoint deletes a specific course by its ID. ADMINS ONLY
 
-DELETE /courses/course_id
-This endpoint deletes a specific course by its ID. Admins only.
+---
 
-
-GET /courses/course_id/students
-This endpoint retrieves all the students offering a particular course.
+- **HTTP Method:** GET
+- **Endpoint:** `/courses/course_id`
+- **Description:** This endpoint retrieves all the students taking a particular course.
+---
 
 This API uses JWT authentication
 
 ---
 
 ### Built with
+    Python
     Flask
     Flask-RESTX
     Flask-SQLALCHEMY
-
-
-
-
 
